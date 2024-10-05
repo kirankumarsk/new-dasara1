@@ -529,7 +529,18 @@ height: 80%;
   text-align: center;
 }
 
+.dcarousal {
+  position: absolute;
+  width: 60%;
+}
 
+.banner_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
 
 @media (max-width: 500px) {
 

@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { init } from "@socialgouv/matomo-next";
 import { useEffect, useState } from "react";
 import { Metadata } from "next";
+import MetaTags from "@/components24/MetaTags";
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 const MATOMO_URL: any = process.env.NEXT_PUBLIC_MATOMO_URL;
 const MATOMO_SITE_ID: any = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
@@ -63,7 +64,12 @@ export default function App({ Component, pageProps }: AppProps) {
       <LayoutComponent
         className={language === "kn" ? nudi.className : montserrat.className}>
         <Head>
-          
+        <MetaTags 
+      title="ಮೈಸೂರು ದಸರಾ 2024 | Mysuru Dasara 2024"
+      description="ಮೈಸೂರು ದಸರಾದ ವೈಭವವನ್ನು ಅನುಭವಿಸಿ: ಬೆಳಗುವ ಅರಮನೆಗಳು, ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಭವ್ಯ ಆನೆ ಮೆರವಣಿಗೆಯನ್ನು ಒಳಗೊಂಡ 10 ದಿನಗಳ ರಾಜಮನೆತನದ ಆಚರಣೆ. ಕರ್ನಾಟಕದ ಸಮೃದ್ಧ ಪರಂಪರೆಯನ್ನು ಸಜೀವಗೊಳಿಸುವುದನ್ನು ವೀಕ್ಷಿಸಿ || Experience the grandeur of Mysuru Dasara: A 10-day royal celebration featuring illuminated palaces, cultural performances, and a majestic elephant parade."
+      ogImage={"https://imagedelivery.net/cJxV3Z5xUIYHcgsXUkFAMw/d299215b-0dbc-4b4b-e457-ef160f1a0f00/public"}
+      
+    />
           {/* <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Mysuru Dasara 2024 | ಮೈಸೂರು ದಸರಾ ೨೦೨೪</title>
           <link

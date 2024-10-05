@@ -50,7 +50,7 @@ const SocialMediaFeed = () => {
       case 'fb':
         return <FacebookEmbed url={url} width={350} />;
       default:
-        return null;
+        return <InstagramEmbed url={url} width={350} height={400}/> ;
     }
   };
 

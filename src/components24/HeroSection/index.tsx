@@ -41,6 +41,7 @@ import ktaka_logo from "../../../public/images/ktaka.png";
 import dynamic from "next/dynamic";
 import LivePop from "../LiveTiles";
 import MetaTags from "../MetaTags";
+import DCarousal from "../3dCarousal";
 
 function HeroSection() {
   const { language } = useLanguage();
@@ -53,7 +54,7 @@ function HeroSection() {
   const [liveEvents, setLiveEvents]: any[] = useState();
 
   useEffect(() => {
-    setHasMounted(true);
+    
 
     async function fetchMain() {
       const response = await getApiData("main_page");
@@ -62,9 +63,11 @@ function HeroSection() {
       setLiveEvents(evs?.events);
 
       setPopUpType(pop);
+      console.log("the events are : ", evs?.events)
       // response["title"] = language === "kn" ? "ಅವಲೋಕನ" : "Quick Overview";
       // setComps(response);
       // setOpen(false);
+      setHasMounted(true);
     }
 
     async function fetchData() {
@@ -106,6 +109,7 @@ function HeroSection() {
       ogImage={popupType?.ticket?.og_image ? popupType?.ticket?.og_image : "https://imagedelivery.net/cJxV3Z5xUIYHcgsXUkFAMw/d299215b-0dbc-4b4b-e457-ef160f1a0f00/public"}
       
     />
+    
       <div className={style.top_eleph} suppressHydrationWarning={true}>
         <div className={`${style.eleph_left}`}>
           <Image
@@ -406,8 +410,13 @@ function HeroSection() {
           alt={""}
           style={{ width: "100%", position: "absolute" }}
         />
+        <div className={style.dcarousal}>
+        <DCarousal events={liveEvents}></DCarousal>
+        </div>
         <Image src={md_banner_inner_image} alt={""} style={{ width: "100%" }} />
+        
       </div>
+
       <div className={style.carousal_main}>
         <Carousal items={comps}></Carousal>
         <Carousal items={todays}></Carousal>

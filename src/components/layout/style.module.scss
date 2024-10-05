@@ -13,21 +13,21 @@
     background-size: contain;
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 349px) {
     .headers {
         position: fixed;
         top: 0;
         left: 0;
-        width: 300px;
+        width: 100%;
     }
 }
 
 
-// @media (min-width: 350px) and (max-width: 399px) {
-//     .headers {
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//     }
-// }
+@media (min-width: 350px) and (max-width: 399px) {
+    .headers {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
