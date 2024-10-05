@@ -1,0 +1,1027 @@
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: max-content;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: -25%;
+  padding-bottom: 50%;
+}
+.bg_image {
+  background-image: url("../../../public/images/landing_page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: -moz-max-content;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 10%;
+  padding-bottom: 35%;
+}
+.bg_arch {
+  background-image: url("../../../public/images/Frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  visibility: hidden;
+}
+.bg_elephant {
+  z-index: 100;
+  position: relative;
+  margin-right: 15%;
+  visibility: hidden;
+}
+
+.redlogobg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 8px;
+  margin-right: 8px;
+  height: 8%;
+  width: 8%;
+}
+
+.Time_bg {
+  background-image: url("../../../public/images/md_bg_24.png");
+  background-repeat: round;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.nametext {
+  color: #fff;
+  font-size: 9px;
+  text-align: center;
+  font-stretch: 70%;
+  span {
+    font-size: 14px;
+  }
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f8e07b 0%,
+    #f2ff00 29%,
+    #f3e3f5 67%,
+    #ffffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #ffffff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: inherit;
+  max-width: 200px;
+  font-weight: 800;
+}
+
+.elph_timer {
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+//mt-8 mr-8
+.gov_logo {
+  margin-top: 8px;
+  margin-right: 8px;
+  height: 8%;
+  width: 8%;
+}
+
+.inner_cms {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+  // margin: 36px;
+  gap: 60px;
+}
+
+// @media (max-width: 768px) {
+
+//   .bg_arch {
+//     background-size: contain;
+//     height: 16vh;
+//   }
+//   .gov_logo {
+//     height: 60px;
+//     width: 60px;
+//     margin-top: 8px;
+// margin-right: 8px;
+//   }
+//   .redlogobg {
+//     height: 60px;
+//     width: 60px;
+//     margin-top: 8px;
+// margin-right: 8px;
+//   }
+//   .bg {
+//     background-image: url("../../../public/images/TimeBg.png");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     height: 800px;;
+//     width: 100%;
+//     position: relative;
+
+//   }
+//   .outer_hero {
+//     margin-top: 100px;
+//     display: flex;
+// flex-direction: column;
+//   }
+//   .shiv_outer .hcm_outer .dk_outer .cm_outer{
+
+//     height: 120px;
+//     width: 120px;
+//   }
+//   .shiraj {
+//     height: 100px;
+//     width: 100px;
+//   }
+
+//   .bg_elephant {
+//     visibility: hidden;
+//   }
+// }
+
+.count_head {
+  color: rgb(255, 245, 4);
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  color: "#FFF504";
+  font-size: 3.5rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousal_main {
+  background-image: url("../../../public/images/md_bg_24.png");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-repeat: round;
+}
+
+@media (max-width: 1024px) {
+
+  .carousal_main {
+    background-image: url("../../../public/images/md_bg_24.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-repeat: round;
+  }
+
+  .img {
+    width: 60%;
+    height: 60%;
+  }
+  .inner_cms {
+    max-width: 200px;
+    margin-right: 60px;
+    max-width: 200px;
+  }
+
+  .nametext {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: auto;
+    white-space: pre-line;
+    max-width: 100px;
+    font-weight: 300;
+  }
+
+
+  .outer_hero {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: saturate(180%) blur(2px);
+    padding: 8px;
+    margin: 8px;
+    border: #fff;
+    border-radius: 8px;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  .img {
+    max-height: 150px;
+    max-width: 100px;
+  }
+  .p {
+    width: max-content;
+  }
+}
+
+.outer_main {
+  position: absolute;
+  top: 16%;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 30%;
+}
+
+.inner_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  top: 18%;
+  gap: 10px;
+  border: white;
+  border-radius: 12px;
+  width: 35%;
+  height: min-content;
+  align-items: center;
+}
+
+.inner_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  text-align: left;
+  top: 18%;
+  gap: 10px;
+  border: white;
+  border-radius: 12px;
+  height: min-content;
+  align-items: center;
+}
+
+.left_1,
+.left_2 {
+  text-align: center;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  align-self: flex-start;
+}
+
+.right_1,
+.right_2 {
+  text-align: center;
+  margin: 4px;
+  display: flex;
+  flex-basis: fit-content;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  align-self: flex-start;
+}
+
+.mys_min_image {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  margin: 4px;
+}
+
+.banner_desig_text {
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.21);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(2px);
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.min_names {
+  font-size: large;
+}
+
+.min_names,
+.main_heading,
+.frame_gov,
+.top_eleph {
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #ba973a 0%,
+    #d9bf64 40%,
+    #f7efa1 60%,
+    #d1b459 80%,
+    #f7efa1 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  padding: 4%;
+}
+
+.main_heading {
+  padding: 8px;
+  margin: 8px;
+  align-self: baseline;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 6%;
+  width: 100%;
+  z-index: 100;
+  left: 0.4%;
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  flex-basis: max-content;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.min_centers {
+  display: flex;
+  flex-direction: column;
+}
+
+.video_section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 23.5%;
+}
+
+.base_bg {
+  background-image: url("../../../public/images/exp2_arch_gaja.png"),
+    url("../../../public/images/pattern_design.png");
+  background-color: #08666a;
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 65% 25% 35% 30%;
+  position: relative;
+  bottom: 0;
+  background-origin: padding-box;
+}
+
+.logo_section {
+  display: flex;
+  flex-direction: row;
+  flex-basis: max-content;
+  position: absolute;
+  top: 6%;
+  left: 0;
+  width: 100%;
+  align-items: self-start;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 40%;
+}
+.frame_gov {
+  width: 100%;
+  height: 5%;
+  left: 0;
+  right: 0;
+  top: 15%;
+  position: absolute;
+}
+
+.top_eleph {
+  position: absolute;
+  top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.eleph_left {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  height: 150px;
+  width: 200px;
+}
+.eleph_right {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  height: 150px;
+}
+
+.main_tickets {
+  background: url("../../../public/images/md_bg_24.png");
+display: flex;
+flex-direction: row;
+flex-basis: fit-content;
+align-items: baseline;
+justify-content: center;
+height: 80%;
+  width: 90%;
+  border: gold;
+    border-top-width: medium;
+    border-top-style: none;
+    border-right-width: medium;
+    border-right-style: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-left-width: medium;
+    border-left-style: none;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  overflow: scroll;
+}
+
+.count_head {
+  color: rgb(255, 245, 4);
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  color: "#FFF504";
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+
+  .carousal_main {
+    background-image: url("../../../public/images/md_bg_24.png");
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_tickets {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+  .counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: saturate(180%) blur(2px);
+    border: #fff;
+    border-radius: 8px;
+    width: max-content;
+  }
+
+  .count_head {
+    font-size: medium;
+  }
+  .outer_main {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .raja {
+    height: 50px;
+    width: 50px;
+  }
+
+  .main_heading {
+    padding: 8px;
+    margin: 8px;
+    align-self: baseline;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    left: 0.4%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 14.5%;
+  }
+
+  .min_names {
+    font-size: small;
+  }
+  .banner_desig_text {
+font-size: 10px;
+  }
+
+  .mys_min_image {
+    height: 80px;
+    width: 80px;
+  }
+
+  .logo_section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: fit-content;
+    position: absolute;
+    top: 20%;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .inner_left {
+    background: transparent;
+    backdrop-filter: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1%;
+    width: 50%;
+    align-self: flex-start;
+  }
+
+  .inner_right {
+    background: transparent;
+    backdrop-filter: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1%;
+    width: 50%;
+    align-self: flex-start;
+  }
+  .left_2,
+  .left_1 {
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+
+  .right_1,
+  .right_2 {
+    text-align: center;
+    display: flex;
+    flex-basis: fit-content;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    align-self: first baseline;
+  }
+
+  .eleph_left,
+  .eleph_right {
+    width: 50px;
+    height: 50px;
+  }
+
+  .top_eleph {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+  }
+
+  .bg_elephant {
+    visibility: hidden;
+  }
+  .count_head {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  .gov_logo {
+    width: 60px;
+    height: 60px;
+    height: 10%;
+    width: 10%;
+  }
+  .frame_gov {
+    visibility: collapse;
+  }
+  .redlogobg {
+    width: 60px;
+    height: 60px;
+    height: 10%;
+    width: 10%;
+  }
+
+  .base_bg {
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    height: fit-content;
+    padding: 100% 30%;
+  }
+
+  .counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .carousal_main {
+    background-image: url("../../../public/images/md_bg_24.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .base_bg {
+    padding: 85% 25% 35% 30%;
+    background-size: contain;
+  }
+  .top_eleph {
+    position: absolute;
+    top: -5%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-around;
+    gap: 75%;
+  }
+
+  .right_1,
+  .right_2 {
+    margin: 0px;
+  }
+  .eleph_left,
+  .eleph_right {
+  }
+  .frame_gov {
+    top: 25%;
+  }
+
+  .eleph_left {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .eleph_right {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo_section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: max-content;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20%;
+  }
+
+  .main_heading {
+  }
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .base_bg {
+    // padding: 95% 35% 99% 30%;
+    background-size: contain;
+  }
+  .outer_main {
+    top: 30%;
+  }
+  .top_eleph {
+    position: absolute;
+    top: -5%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-around;
+    gap: 70%;
+  }
+  .eleph_left,
+  .eleph_right {
+  }
+  .frame_gov {
+    top: 25%;
+  }
+
+  .eleph_left {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .eleph_right {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right_1,
+  .right_2 {
+    align-self: first baseline;
+    margin: 0px;
+  }
+
+  .logo_section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: max-content;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+  }
+  .banner_desig_text {
+    
+  }
+
+  .min_names {
+    
+  }
+
+  .mys_min_image {
+    height: 80px;
+    width: 80px;
+  }
+
+  .redlogobg {
+    width: 15%;
+    height: 15%;
+  }
+
+  .gov_logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .about_end_frame {
+    visibility: collapse;
+  }
+
+  .main_heading {
+    padding: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 8px;
+    align-self: baseline;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    left: 0.4%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 14.5%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .base_bg {
+    padding: 90% 35% 65% 30%;
+    background-size: contain;
+  }
+  .outer_main {
+    top: 36%;
+  }
+
+  .inner_left,
+  .inner_right {
+    gap: 0;
+  }
+  .top_eleph {
+    position: absolute;
+    top: -5%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-around;
+    gap: 75%;
+  }
+
+  .right_1,
+  .right_2 {
+    align-self: self-end;
+    margin: 0px;
+  }
+  .eleph_left,
+  .eleph_right {
+  }
+  .frame_gov {
+    top: 25%;
+  }
+
+  .eleph_left {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .eleph_right {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 300px;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo_section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: max-content;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+  }
+
+  .banner_desig_text {
+    visibility: collapse;
+    height: 0px;
+    width: 0px;
+    display: none;
+  }
+
+  .min_names {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .mys_min_image {
+    height: 60px;
+    width: 60px;
+  }
+
+  .redlogobg {
+    width: 15%;
+    height: 15%;
+  }
+
+  .gov_logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .about_end_frame {
+    visibility: collapse;
+  }
+
+  .main_heading {
+    padding: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 8px;
+    align-self: baseline;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    left: 0.4%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 14.5%;
+  }
+}
+
+.elph_timer {
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+
+  .base_bg{
+    padding: 65% 25% 97% 30% ;
+  }
+
+      .logo_section {
+        display: flex;
+        flex-direction: row;
+        flex-basis: max-content;
+        position: absolute;
+        margin-top: 7%;
+        left: 0;
+        width: 100%;
+        align-items: self-start;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 35%;
+      }
+      .gov_logo {
+        margin-right: 8px;
+        height: 7%;
+        width: 7%;
+      }
+      .redlogobg{
+        height: 7%;
+        width: 7%;
+        margin-left: 20px;
+
+      }
+      .top_eleph {
+        top: 8%;
+        
+      }
+    .main_heading {
+      margin-top: 10%;
+
+    }
+    .outer_main {
+      position: absolute;
+      top: 20%;
+      display: flex;
+      flex-direction: row;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+      gap: 30%;
+    }
+    
+    
+}

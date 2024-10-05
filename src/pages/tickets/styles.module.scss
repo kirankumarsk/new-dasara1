@@ -1,0 +1,68 @@
+.main_tickets {
+  display: flex;
+  flex-direction: row;
+  flex-basis: fit-content;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.other_tickets {
+}
+
+@media (max-width: 500px) {
+
+    .main_tickets {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+.ticket_parent {
+    background-image: url("../../../public/images/md_bg_24.png");
+    padding-top: 8%;
+    background-repeat: round;
+}
+
+
+.glass_background {
+    background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.03),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  }
+  
+  .glass_background::before {
+    background: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 8px 12px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  }
+
+  .ticket_notice:hover {
+    backdrop-filter: blur(10px);
+  }
+  
+  
+  .ticket_notice:hover::after {
+    backdrop-filter: blur(2px);
+  }
+
+  .ticket_note_content {
+    padding: 2%;
+    color: white;
+  }
+
+  .ticket_note_heading {
+
+    padding: 8px;
+    color: gold;
+    text-align: center;
+  }

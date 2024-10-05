@@ -1,0 +1,108 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  padding: 8px;
+  align-items: center;
+
+
+}
+
+.image {
+  width: 50%;
+  border: gold;
+    border-top-width: medium;
+    border-top-style: none;
+    border-right-width: medium;
+    border-right-style: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-left-width: medium;
+    border-left-style: none;
+  border-width: 2px;
+  border-radius: 12px;
+  border-style: solid;
+}
+
+.content {
+  padding: 2%;
+  margin: 2%;
+  color: white;
+  font-size: large;
+  text-align: start;
+}
+
+.modal_image {
+  position: absolute;
+  width: 80%;
+  max-width: 80%;
+  padding: 20px;
+  max-height: 80%;
+  z-index: 2;
+  opacity: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+    align-items: center;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .content {
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
+
+  .modal_image {
+    position: absolute;
+    width: 95%;
+    max-width: 95%;
+    max-height: 40%;
+    padding: 20px;
+    z-index: 2;
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+.divider {
+  margin: 0 auto;
+  width: 30%;
+  height: 60px;
+}
+
+.bg_blur {
+  background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border-radius: 12px;
+padding: 30px;
+box-shadow: 
+  0 4px 6px rgba(0, 0, 0, 0.05),
+  0 1px 3px rgba(0, 0, 0, 0.03),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+transition: all 0.3s ease;
+}
+
+.bg_blur::before {
+  background: rgba(255, 255, 255, 0.15);
+box-shadow: 
+  0 8px 12px rgba(0, 0, 0, 0.08),
+  0 2px 4px rgba(0, 0, 0, 0.05),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.bg_blur:hover {
+  backdrop-filter: blur(10px);
+}

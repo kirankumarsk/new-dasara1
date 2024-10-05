@@ -1,0 +1,101 @@
+.bg {
+  background-image: url("../../../public/images/md_bg_24.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 460.85px;
+  height: 284.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8px;
+}
+.sub_image {
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 22px;
+  opacity: 1;
+  overflow: hidden;
+  border: #f7efa1;
+  border-style: solid;
+  border-width: 2px;
+}
+.modal_image {
+  position: absolute;
+  width: 80%;
+  padding: 20px;
+  height: 80%;
+  z-index: 2;
+  opacity: 1;
+  overflow: hidden;
+}
+.image {
+  position: relative;
+  z-index: 2;
+}
+
+.image_blur {
+  background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border-radius: 12px;
+padding: 30px;
+box-shadow: 
+  0 4px 6px rgba(0, 0, 0, 0.05),
+  0 1px 3px rgba(0, 0, 0, 0.03),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+transition: all 0.3s ease;
+padding: 3%;
+}
+
+.image_blur:hover {
+  backdrop-filter: blur(10px);
+}
+.image_blur:hover:after {
+  backdrop-filter: blur(2px);
+}
+
+
+
+@media (max-width: 600px) and (max-device-width: 1024px) {
+  .modal_image {
+    position: absolute;
+    width: 95%;
+    padding: 20px;
+    height: 30%;
+    z-index: 2;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .sub_image {
+    position: absolute;
+    z-index: 2;
+    border-radius: 12px;
+    opacity: 1;
+    overflow: hidden;
+    border: #f7efa1;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  .container {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px;
+    // width: 100px;
+    // height: 80px;
+  }
+}
+
+
+

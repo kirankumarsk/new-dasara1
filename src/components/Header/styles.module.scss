@@ -1,0 +1,197 @@
+.Link{
+    color: #580447;
+    font-size: 1.2rem;
+    text-decoration: none;
+    animation: border-pulse 2s ease-in-out infinite;
+    font-weight: normal;
+}
+.ham, .nav_active {
+  display: none;
+  color:#580447;
+}
+.activeTab{
+  color:#fbb200;
+}
+.selection{
+    border-radius: 40px;
+    border: 2px solid #580447;
+    text-align: center;
+    padding: 4px;
+}
+.text-color{
+  color: #fbb200;
+}
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  display: none; /* Initially hidden */
+  z-index: 1; /* Make it appear on top */
+  padding: 20px;
+
+}
+
+.dropdownActive {
+  display: block;
+  padding: 20px;
+        margin: 0px 16px 16px;
+        padding-top: 10px;
+        border: 1px;
+        text-align: left;
+   /* Show when active */
+}
+
+.tabContainer {
+  position: relative;
+  padding-top: 10px;
+  gap:5%;
+  margin-top: 10px;
+  padding: 5px;
+    white-space: nowrap;
+}
+.nav_style {
+    text-transform: uppercase;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #580447;
+  animation: textclip 5s linear infinite;
+  display: flex;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-weight: bold;
+}
+.nav_active{
+  background-color: #580447;
+}
+.nav_outer_style {
+  padding-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: 8px;
+}
+
+@keyframes textclip {
+    0% {
+       border-color: #000000;
+    }
+    50% {
+       border-color: #fff700;
+    }
+    100% {
+       border-color: #057b80;
+    }
+ }
+
+ @media (max-width: 768px) {
+
+    .nav_outer_style {
+    padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 0px;
+      
+    }
+
+    .nav_style {
+        padding: 16px;
+        margin: 0px 16px 16px;
+        background: white;
+        border-color: rgb(5, 123, 128);
+        border-width: 3px;
+        border-radius: 36px;
+        align-items: center;
+    }
+    .ham, .nav_active {
+      display: block;
+      color:#fbb200;
+    }
+ }
+
+ @media only screen and (max-width: 767px) {
+  .ham, .nav_active {
+    display: block;
+  }
+  .activeTab{
+    color:#fbb200;
+  }
+  .nav_style {
+    align-items: center;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  visibility: collapse;
+  }
+
+  .nav_active {
+    visibility: visible;
+      animation: fadeIn 0.5s;
+      animation-fill-mode: backwards;
+      align-items: center;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      font-size: large;
+  
+    @keyframes fadeIn {
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        width: 0%;
+        visibility: hidden;
+      }
+      100% {
+        width: 80%;
+        visibility: visible;
+      }
+    }
+  }
+ 
+  .Link{
+    color: #580447;
+    font-size: large;
+    text-decoration: none;
+    animation: border-pulse 2s ease-in-out infinite;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  display: block; /* Initially hidden */
+  z-index: 1; /* Make it appear on top */
+  padding: 20px;
+}
+
+.dropdownActive {
+  display: block;
+  padding: 20px;
+        margin: 0px 16px 16px;
+        padding-top: 10px;
+        border: 1px;
+        text-align: left;
+   /* Show when active */
+}
+
+.tabContainer {
+  position: relative;
+  padding-top: 10px;
+  gap:5%;
+  margin-top: 10px;
+  padding: 5px;
+    white-space: nowrap;
+}
+.selection{
+  border-radius: 40px;
+  border: 2px solid #580447;
+  text-align: center;
+  padding: 4px;
+}
+.text-color{
+color: #fbb200;
+}
+
+ }

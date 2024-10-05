@@ -1,0 +1,127 @@
+.Link{
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    animation: border-pulse 2s ease-in-out infinite;
+}
+.ham, .nav_active {
+  display: none;
+}
+.selection{
+    border-radius: 20px;
+    border: 2px solid #058B95;
+    text-align: center;
+    padding: 4px;
+}
+
+.nav_style {
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #000000;
+  animation: textclip 5s linear infinite;
+  display: flex;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+
+.nav_outer_style {
+  padding-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: 8px;
+}
+
+@keyframes textclip {
+    0% {
+       border-color: #000000;
+    }
+    50% {
+       border-color: #fff700;
+    }
+    100% {
+       border-color: #057b80;
+    }
+ }
+
+ @media (max-width: 768px) {
+
+    .nav_outer_style {
+    padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 0px;
+      
+    }
+
+    .nav_style {
+        padding: 16px;
+        margin: 0px 16px 16px;
+        background: white;
+        border-color: rgb(5, 123, 128);
+        border-width: 3px;
+        border-radius: 36px;
+        align-items: center;
+    }
+    .ham, .nav_active {
+      display: block;
+    }
+ }
+
+ @media only screen and (max-width: 767px) {
+  .ham, .nav_active {
+    display: block;
+  }
+  .nav_style {
+    align-items: center;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  visibility: collapse;
+  }
+
+  .nav_active {
+    visibility: visible;
+      animation: fadeIn 0.5s;
+      animation-fill-mode: backwards;
+      align-items: center;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      font-size: medium;
+  
+    @keyframes fadeIn {
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        width: 0%;
+        visibility: hidden;
+      }
+      100% {
+        width: 80%;
+        visibility: visible;
+      }
+    }
+  }
+ 
+  .Link{
+    color: #000;
+    font-size: medium;
+    text-decoration: none;
+    animation: border-pulse 2s ease-in-out infinite;
+}
+
+ }

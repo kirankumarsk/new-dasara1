@@ -1,0 +1,33 @@
+.outer {
+  display: flex;
+  flex-direction: row;
+}
+
+.left,
+.right {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: gold;
+}
+
+.img {
+  border-radius: 12px;
+  border-color: #530f0f;
+  border-width: 2px;
+}
+
+@media (max-width: 600px) {
+  .outer {
+    display: grid;
+    justify-items: center;
+    // flex-direction: row;
+  }
+
+  .right {
+    margin: 20px;
+  }
+}

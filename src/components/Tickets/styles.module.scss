@@ -1,0 +1,53 @@
+.perticket {
+
+    color: white;
+}
+
+
+.ticket_name {
+    font-size: xx-large;
+  padding: 2%;
+  color: gold;
+}
+
+.image {
+    padding: 2%;
+}
+
+.ticket_cost {
+    font-weight: bolder;
+  color: yellow;
+}
+
+.perticket {
+    width: 30%;
+    padding: 2%;
+}
+
+.link {
+    font-size: 30px;
+  border: gold;
+    border-top-style: none;
+    border-top-color: gold;
+    border-right-style: none;
+    border-right-color: gold;
+    border-bottom-style: none;
+    border-bottom-color: gold;
+    border-left-style: none;
+    border-left-color: gold;
+  border-style: solid;
+  border-radius: 12px;
+  padding: 2%;
+  border-color: goldenrod;
+  color: white;
+  padding: 2%;
+}
+
+
+@media (max-width: 500px) {
+
+    .perticket {
+        width: 80%;
+        padding: 2%;
+    }
+}

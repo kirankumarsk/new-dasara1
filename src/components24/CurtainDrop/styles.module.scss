@@ -1,0 +1,99 @@
+.curtainContainer {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    overflow: hidden;
+    
+    &.open {
+      pointer-events: none;
+    }
+  }
+  
+  .curtain {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: transform 1s ease;
+    background: url("../../../public/images/dasara_anim_sm.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &.left {
+      left: 0;
+      background-position: left center;
+      background-size: 200%;
+      
+      .open & {
+        transform: translateX(-100%);
+      }
+    }
+    
+    &.right {
+      right: 0;
+      background-position: right center;
+      background-size: 200%;
+      
+      .open & {
+        transform: translateX(100%);
+      }
+    }
+  }
+  
+  .welcomeText {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    opacity: 0;
+    
+    .open & {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1s ease-in;
+  }
+
+  @media (max-width: 767px) {
+
+
+    .curtain {
+
+      width: 100%;
+      height: 100%;
+    &.left {
+      bottom: 0;
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: repeat;
+      
+      .open & {
+        transform: translateY(-100%);
+      }
+    }
+    
+    &.right {
+      top: 0;
+      background-position: top;
+      background-size: contain;
+      background-repeat: repeat;
+      
+      .open & {
+        transform: translateY(100%);
+      }
+    }
+  }
+}

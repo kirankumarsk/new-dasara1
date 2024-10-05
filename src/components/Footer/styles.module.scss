@@ -1,0 +1,121 @@
+.container {
+  background-image: url("../../../public/images/md_landingbg.png");
+  width: 100%;
+  position: relative;
+  color: #fbb200;
+  font-size: 1rem;
+  background-size: cover; 
+  
+}
+.flex {
+  display: flex;
+  align-items:10px;
+  justify-content: center;
+  gap: 20px;
+
+}
+.item {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+  display: flex;
+  flex: row;
+}
+.item:hover {
+  text-decoration: underline;
+}
+.logo_frames {
+}
+.eleph_left {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  padding-left: 10px;
+  height: 80%;
+  width: 80%;
+  justify-content: center;
+}
+
+.company {
+  background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(2px);
+border-radius: 12px;
+padding: 30px;
+box-shadow: 
+  0 4px 6px rgba(0, 0, 0, 0.05),
+  0 1px 3px rgba(0, 0, 0, 0.03),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+transition: all 0.3s ease;
+}
+
+.company::before {
+  background: rgba(255, 255, 255, 0.15);
+box-shadow: 
+  0 8px 12px rgba(0, 0, 0, 0.505),
+  0 2px 4px rgba(0, 0, 0, 0.05),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.company:hover {
+  backdrop-filter: blur(12px);
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Rotator
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
+.nonrotors {
+ height: 150px;
+  width: 150px;
+  align-self: center;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {.nonrotors{width: 120px;
+  height:120px;
+}}
+@media (min-width: 1024px)and (max-width: 1406px) {.nonrotors{width: 90px;
+  height:90px;
+  
+}}
+@media (min-width: 300px) and (max-width: 450px){
+  .nonrotors {
+    height: 100px;
+    width: 100px;
+  }
+}

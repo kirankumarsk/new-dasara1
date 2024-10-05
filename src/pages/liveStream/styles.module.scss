@@ -1,0 +1,46 @@
+.bg {
+  background-image: url("../../../public/images/md_bg_24.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 460.85px;
+  height: 284.5px;
+
+  iframe {
+    position: absolute;
+    top: 25%;
+    left: 9px;
+    width: 96%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 22px;
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+.image {
+  position: relative;
+  z-index: 2;
+}
+
+.other_videos {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  overflow-x: scroll;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) and (max-device-width: 1024px) {
+  .other_videos {
+    display: grid;
+    justify-content: start;
+  }
+}

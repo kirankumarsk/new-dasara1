@@ -1,0 +1,24 @@
+.awesome {
+    padding: 2%;
+  width: 50%;
+  height: 50%;
+}
+
+.count_head {
+    color: rgb(255, 245, 4);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    color: "#FFF504";
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .deco {
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gold;
+  }
+
+  .carousal_main {
+    align-items: first baseline;
+  }
